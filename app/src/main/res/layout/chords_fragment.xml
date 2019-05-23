@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/randomizedButton"
+            android:text="Jazzomize"
+            android:layout_width="277dp"
+            android:layout_height="48dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="64dp"/>
+
+    <TextView
+            android:id="@+id/chordTextView"
+            android:layout_width="396dp"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.493" android:textSize="50sp"
+            app:layout_constraintHorizontal_bias="0.466" android:textAlignment="center"/>
+
+    <TextView
+            android:id="@+id/extensionTextView"
+            android:layout_width="77dp"
+            android:layout_height="47dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.448" android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.634" android:textAlignment="viewStart"/>
+
+    <TextView
+            android:id="@+id/positionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="36sp"
+            app:layout_constraintHorizontal_bias="0.0" android:textAlignment="center"
+            android:layout_marginBottom="172dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/chordTextView"
+            app:layout_constraintVertical_bias="0.0"/>
+    <CheckBox
+            android:text="Timer"
+            android:layout_width="72dp"
+            android:layout_height="48dp"
+            android:id="@+id/timerCheckBox"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@+id/chordTextView"
+            app:layout_constraintEnd_toEndOf="@+id/chordTextView" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/randomizedButton"
+            android:checked="true"/>
+    <EditText
+            android:id="@+id/secondsInput"
+            android:layout_width="72dp"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/positionTextView" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0" android:hint="Seconds" android:text="5"
+            android:textSize="16sp" app:layout_constraintTop_toBottomOf="@+id/timerCheckBox"/>
+    <Switch
+            android:text="-7"
+            android:layout_width="69dp"
+            android:layout_height="33dp"
+            android:id="@+id/min7" android:textAlignment="viewEnd" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/randomizedButton"
+            android:checked="true" />
+    <Switch
+            android:text="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dom7" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/min7"
+            android:checked="true"/>
+    <Switch
+            android:text="maj7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/maj7" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dom7"
+            android:checked="true" />
+    <Switch
+            android:text="-7b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dim7" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maj7"
+            android:checked="true" />
+    <Switch
+            android:text="7b9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/maj7b9" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dim7"
+            android:checked="true" />
+    <Switch
+            android:text="7#5#9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aug7" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maj7b9"
+            android:checked="true" />
+    <Switch
+            android:text="Position A"
+            android:layout_width="120dp"
+            android:layout_height="24dp"
+            android:id="@+id/positionA"
+            android:checked="true"
+            app:layout_constraintTop_toBottomOf="@+id/randomizedButton"
+            android:layout_marginTop="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/min7"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" android:textAlignment="viewStart"/>
+    <Switch
+            android:text="Position B"
+            android:layout_width="120dp"
+            android:layout_height="21dp"
+            android:id="@+id/positionB"
+            app:layout_constraintTop_toBottomOf="@+id/positionA"
+            android:checked="true" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/dom7" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.496"/>
+
+</android.support.constraint.ConstraintLayout>
