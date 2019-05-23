@@ -98,7 +98,7 @@
             android:text="-7b5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/dim7" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/min7b5" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/maj7"
             android:checked="true" />
     <Switch
@@ -106,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/maj7b9" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dim7"
+            app:layout_constraintTop_toBottomOf="@+id/min7b5"
             android:checked="true" />
     <Switch
             android:text="7#5#9"
@@ -115,6 +115,14 @@
             android:id="@+id/aug7" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/maj7b9"
             android:checked="true" />
+    <Switch
+            android:text="dim7"
+            android:layout_width="84dp"
+            android:layout_height="13dp"
+            android:id="@+id/dim7"
+            android:checked="true"
+            app:layout_constraintTop_toBottomOf="@+id/aug7" app:layout_constraintEnd_toEndOf="parent"/>
+
     <Switch
             android:text="Position A"
             android:layout_width="120dp"

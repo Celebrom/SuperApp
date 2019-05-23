@@ -50,7 +50,7 @@ class ChordsFragment : Fragment() {
             11 to "G"
         )
         val positions = hashSetOf("Position A", "Position B")
-        val extensions = hashSetOf("-7", "7", "maj7", "-7b5", "7b9", "7#5#9")
+        val extensions = hashSetOf("-7", "7", "maj7", "-7b5", "7b9", "7#5#9", "dim7")
 
         fun generateExtension(): String {
             if (extensions.isEmpty()) return ("")
@@ -110,7 +110,7 @@ class ChordsFragment : Fragment() {
             else extensions.remove("maj7")
         }
 
-        dim7.setOnCheckedChangeListener { _, isChecked ->
+        min7b5.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) extensions.add("-7b5")
             else extensions.remove("-7b5")
         }
@@ -123,6 +123,11 @@ class ChordsFragment : Fragment() {
         aug7.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) extensions.add("7#5#9")
             else extensions.remove("7#5#9")
+        }
+
+        dim7.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) extensions.add("dim7")
+            else extensions.remove("dim7")
         }
 
         randomizedButton.setOnClickListener {
