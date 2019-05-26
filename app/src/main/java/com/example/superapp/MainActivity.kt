@@ -83,14 +83,3 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         fragmentTransaction.commit()
     }
 }
-
-/*Todo
-- Ajouter la posibilité de mettre symbol au lieu de texte: Cmaj7 vs C(triangle)7
-https://tamingthesaxophone.com/jazz-chord-symbols
-https://en.wikipedia.org/wiki/Musical_Symbols_(Unicode_block)
-https://en.wikipedia.org/wiki/List_of_Unicode_characters
-
-- Permettre d'enlever des notes
-- Créer des settings
-- Faire une page II - V - I comme en ce moment + settings
-* */

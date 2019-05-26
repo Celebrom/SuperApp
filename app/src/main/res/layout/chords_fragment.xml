@@ -62,6 +62,8 @@
             android:checked="true"/>
     <EditText
             android:id="@+id/secondsInput"
+            android:text="5"
+            android:hint="Seconds"
             android:layout_width="72dp"
             android:layout_height="45dp"
             android:inputType="number"
@@ -71,7 +73,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/positionTextView" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.0" android:hint="Seconds" android:text="5"
+            app:layout_constraintVertical_bias="0.0"
             android:textSize="16sp" app:layout_constraintTop_toBottomOf="@+id/timerCheckBox"/>
     <Switch
             android:text="-7"
