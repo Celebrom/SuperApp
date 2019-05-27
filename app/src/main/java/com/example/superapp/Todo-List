@@ -5,7 +5,7 @@ https://en.wikipedia.org/wiki/Musical_Symbols_(Unicode_block)
 https://en.wikipedia.org/wiki/List_of_Unicode_characters
 
 
-- Do not repeat same chord twice? Note? Position? Comment je gère le tout?
+- Mettre les noms de notes dans le fichier de STRING
 - Permettre d'enlever des notes
 - Créer des settings
 - Faire une page II - V - I comme en ce moment + settings
@@ -17,3 +17,4 @@ BUGS
 
 DONES
 - Réinitialise Timer si quand tu changes le nombre de seconde
+- Do not repeat same chord twice

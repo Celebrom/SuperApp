@@ -58,9 +58,12 @@ class ChordsFragment : Fragment() {
     }
 
     private fun generateChord() {
-        chordTextView.text = viewModel.generateNote()
-        extensionTextView.text = viewModel.generateExtension()
-        positionTextView.text = viewModel.generatePosition()
+        val chord = viewModel.getRandomChord()
+        noteTextView.text = chord.note
+        extensionTextView.text = chord.extension
+        positionTextView.text = chord.position
+
+        if (neverRepeat.isChecked) viewModel.removeChord(chord)
     }
 
     private fun startTimer() {
